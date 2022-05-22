@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Portfolio | Vlad Cojocaru"
+	})
+	<body>
+		<div class="page-loader">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="video-wrapper">
+			<div class="video-container">
+				<!-- <video src="img/back.mp4" autoplay loop></video> -->
+				<!-- <img data-src="@img/wallpaper-aesthetic.gif" alt=""> -->
+				<!-- <img src="@img/muzeum-interior_3.jpg" alt=""> -->
+				<picture>
+					<source srcset="img/muzeum-interior_3.jpg" media="(min-width: 1000px)">
+					<source srcset="img/muzeum-interior_3_phone.jpg" media="(max-width: 999px)">
+					<img src="img/muzeum-interior_3.jpg" alt="">
+				</picture>
+			</div>
+		</div>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="main ">
+					@@include('html/_heading.html',{})
+					@@include('html/_home.html',{})
+					@@include('html/_about.html',{})
+					@@include('html/_portfolio.html',{})
+					@@include('html/_contact.html',{})
+				</div>
+				@@include('html/_popup.html',{})
+				</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
